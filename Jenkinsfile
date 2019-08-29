@@ -37,8 +37,8 @@ pipeline {
                 echo 'Starting to build docker image!!'
 
                 script {
-                    // withDockerRegistry([credentialsId: 'puneetvashisht', url: 'docker.io/puneetvashisht']) {
-                        def customImage = docker.build("puneetvashisht/dockerwebdemo:latest")
+                     // withDockerRegistry([credentialsId: 'shubhamsingh0', url: 'docker.io/shubhamsingh0']) {
+                        def customImage = docker.build("shubhamsingh0/stockmarketapplication:latest")
                         customImage.push()
                     // }
                   
